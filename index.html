@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">My Blog</h1>
+      <!-- Navigation -->
+      <nav class="hidden md:flex space-x-4">
+        <a href="index.html" class="hover:text-blue-200">Home</a>
+        <a href="blog.html" class="hover:text-blue-200">Blog</a>
+        <a href="about.html" class="hover:text-blue-200">About</a>
+        <a href="contact.html" class="hover:text-blue-200">Contact</a>
+      </nav>
+      <!-- Hamburger Menu -->
+      <button id="menuBtn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-blue-700">
+      <nav class="flex flex-col space-y-2 px-4 py-4">
+        <a href="index.html" class="hover:text-blue-200">Home</a>
+        <a href="blog.html" class="hover:text-blue-200">Blog</a>
+        <a href="about.html" class="hover:text-blue-200">About</a>
+        <a href="contact.html" class="hover:text-blue-200">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <section class="text-center">
+      <h2 class="text-3xl font-semibold mb-4">Welcome to My Blog</h2>
+      <p class="text-lg mb-6">Explore insights, stories, and tips on various topics. Check out our <a href="blog.html" class="text-blue-500 hover:underline">Blog</a> for the latest posts!</p>
+      <img src="https://via.placeholder.com/600x300" alt="Blog Banner" class="mx-auto rounded-lg mb-6 fade-in">
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
